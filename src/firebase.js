@@ -2,13 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID",
-};
+    apiKey: "AIzaSyCOCCNIFPMFDL2BhF4V6Eko_PXOZAtVdSI",
+    authDomain: "eco-commute-974c5.firebaseapp.com",
+    projectId: "eco-commute-974c5",
+    storageBucket: "eco-commute-974c5.firebasestorage.app",
+    messagingSenderId: "989907915657",
+    appId: "1:989907915657:web:3bdceac98ee1a8ad93c758",
+    measurementId: "G-N2JYN79J74"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

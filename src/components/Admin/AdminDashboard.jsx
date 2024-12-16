@@ -1,9 +1,11 @@
 import React from 'react';
-import '../styles/Dashboard.css';
+import '../../Styles/AdminDashboard.css';
 
 function Dashboard() {
   return (
+    
     <div className="dashboard">
+   
       <h2 className="dashboard-title">Dashboard Overview</h2>
 
       <div className="dashboard-item">
