@@ -33,6 +33,7 @@ const ProtectedRoute = ({ children, user }) => {
 
 const App = () => {
   const [user, setUser] = useState(null);
+  
 
   return (
       <Router>
@@ -84,9 +85,10 @@ const App = () => {
             path="/Logout"
             element={
               <ProtectedRoute user={user}>
-                <Logout />
+                <Logout setUser={setUser} />
               </ProtectedRoute>
-            }/>
+            }
+          />
   
           {/* User Routes */}
           <Route
@@ -141,9 +143,10 @@ const App = () => {
             path="/Logout"
             element={
               <ProtectedRoute user={user}>
-                <Logout />
+                <Logout setUser={setUser} />
               </ProtectedRoute>
-            }/>
+            }
+          />
         </Routes>
       </Router>
     );

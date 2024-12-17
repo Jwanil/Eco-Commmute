@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
-function Logout() {
-  return <h2 style={{ padding: '2rem' }}>Logout Page</h2>;
-}
+const Logout = ({ setUser }) => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Clear user state
+    setUser(null);
+    // Redirect to sign-in page
+    navigate("/");
+  }, [setUser, navigate]);
+
+  return <div>Logging out...</div>; // Optional loading message
+};
 
 export default Logout;

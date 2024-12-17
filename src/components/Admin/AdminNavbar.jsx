@@ -16,6 +16,7 @@ const AdminNavbar = () => {
         <li><Link to="/pollution-trends">Pollution Trends</Link></li>
         <li><Link to="/app-analytics">App Analytics</Link></li>
         <li><Link to="/Logout">Logout</Link></li>
+        {/* <li><Link onClick={handleLogout}>Logout</Link></li> */}
       </ul>
     </nav>
   );

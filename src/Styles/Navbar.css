@@ -14,7 +14,12 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     
   }
-  
+
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+  }
   .nav-links {
     list-style-type: none;
     padding: 0;
@@ -23,6 +28,7 @@
   
   .nav-links li {
     margin-right: 15px;
+    font-size: 18px;
   }
   
   .nav-links li a {
